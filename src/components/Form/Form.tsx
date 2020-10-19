@@ -13,7 +13,7 @@ const Form = () : ReactElement => {
   const postData = async (number : string, first : string, last : string) =>{
     const payload = {number, first, last}
 
-    const { data : { name }} = await axios.post('https://uts-tst2020.azurewebsites.net/api/AddMessage', payload)
+    const { data : {name}} = await axios.post('https://uts-tst2020.azurewebsites.net/api/AddMessage', payload)
     
     setName(name)
     setNumber('')
@@ -27,12 +27,12 @@ const Form = () : ReactElement => {
     <React.Fragment>
       <div className = {styles.container}>
       <div className = {styles.welcome}>
-        Halo! Kenalan Dong!!! {name}!
+        Halo! Kenalan Dong!!!
       </div>
       <div  className = {styles.formContainer}>
         <div className = {styles.field}>
           <div className = {styles.title}>
-            Your ID Number, Please!
+            Your ID Number, Please! ^^
           </div>
           <input type = "text" 
             value = {number} 
@@ -41,7 +41,7 @@ const Form = () : ReactElement => {
         </div>
         <div className = {styles.field}>
           <div className = {styles.title}>
-            Your First Name, Please!
+            Your First Name, Please! ^^
           </div>
           <input type = "text" 
             value = {first} 
@@ -50,7 +50,7 @@ const Form = () : ReactElement => {
         </div>
         <div className = {styles.field}>
           <div className = {styles.title}>
-            Your Last Name, Please!
+            Your Last Name, Please! ^^
           </div>
           <input type = "text" 
             value = {last}
