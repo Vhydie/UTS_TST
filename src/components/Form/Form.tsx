@@ -13,7 +13,7 @@ const Form = () : ReactElement => {
   const postData = async (number : string, first : string, last : string) =>{
     const payload = {number, first, last}
 
-    const { data : {name}} = await axios.post('https://uts-tst2020.azurewebsites.net/api/AddMessage', payload)
+    const { data : {name}} = await axios.post('https://utstst.azurewebsites.net/api/HttpTrigger1?code=faaZpgaxSq40SRTxXFdpDES1ePRq5DkNPBYF5bkHYZIhi0JfPoOZIg==', payload)
     
     setName(name)
     setNumber('')
