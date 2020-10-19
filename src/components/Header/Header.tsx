@@ -14,10 +14,7 @@ const Header = () : ReactElement => {
         Simple Web Application using Azure
       </div>
       <div className = {styles.title}>
-        Vhydie Gilang Christianto The
-      </div>
-      <div className = {styles.title}>
-        18218016
+        18218016 Vhydie Gilang Christianto The
       </div>
     </div>
   )
