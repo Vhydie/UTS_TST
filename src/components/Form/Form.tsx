@@ -27,12 +27,12 @@ const Form = () : ReactElement => {
     <React.Fragment>
       <div className = {styles.container}>
       <div className = {styles.welcome}>
-        Halo! Kenalan Dong!!! { name }!
+        Halo! Kenalan Dong!!! {name}!
       </div>
       <div  className = {styles.formContainer}>
         <div className = {styles.field}>
           <div className = {styles.title}>
-            Number
+            Your ID Number, Please!
           </div>
           <input type = "text" 
             value = {number} 
@@ -41,7 +41,7 @@ const Form = () : ReactElement => {
         </div>
         <div className = {styles.field}>
           <div className = {styles.title}>
-            First
+            Your First Name, Please!
           </div>
           <input type = "text" 
             value = {first} 
@@ -50,7 +50,7 @@ const Form = () : ReactElement => {
         </div>
         <div className = {styles.field}>
           <div className = {styles.title}>
-            Last
+            Your Last Name, Please!
           </div>
           <input type = "text" 
             value = {last}
@@ -64,8 +64,7 @@ const Form = () : ReactElement => {
     </div>
     <SweetAlert
       show = {show}
-      title = {`Halo ${name}!`}
-      title = {`Nama saya Vhydie`}
+      title = {`Halo ${name}! Nama saya Vhydie, Salam Kenal!`}
       onConfirm={() => setShow(false)}
     />
     </React.Fragment>
